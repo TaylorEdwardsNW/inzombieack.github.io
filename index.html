@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Backbone.js Challenge</title>
+	<link rel="stylesheet" type="text/css" href="Challenge3.css"/>
+</head>
+<body>
+	<h1>Backbone.js Challenge</h1>
+	<form id="addPerson" action="">
+			<input type="text" class="first" placeholder="First Name"><br>
+            <input type="text" class="last"placeholder="Last Name"><br>
+            <input type="text" class="email" placeholder="Email"><br>
+			<input type="submit" value="Add Person" id="add"><br>
+	</form>
+<script id="personTemplate" type="text/template">
+    <span><strong><%= name %></strong><button class="edit" id="editPerson">Edit</button><strong><%= last %></strong><button class="edit" id="editLast">Edit</button> - <em><%= email %></em><button class="edit" id="editEmail">Edit</button></span> 
+	<button class="delete">Delete</button>
+</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
+<script src="Challenge3.js"></script>
+</body>
+</html>
